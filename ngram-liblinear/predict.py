@@ -15,10 +15,11 @@ def metrics_result(actual, predict):
 def main():
     if __name__ == "__main__":
         y, x = svm_read_problem(feature_dir, return_scipy = True)
-        train_X = x[:16000]
-        train_y = y[:16000]
-        test_X = x[16000:]
-        test_y = y[16000:]
+        # train:test = 7:3
+        train_X = x[:14000]
+        train_y = y[:14000]
+        test_X = x[14000:]
+        test_y = y[14000:]
 
         prob = problem(train_y,train_X)
         param = parameter("-c 1 -s 2")
