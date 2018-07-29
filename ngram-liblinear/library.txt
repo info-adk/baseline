@@ -1,0 +1,8 @@
+n-gram
+https://blog.csdn.net/ahmanz/article/details/51273500
+https://blog.csdn.net/baimafujinji/article/details/51281816
+
+liblinear
+https://blog.csdn.net/zwwhsxq/article/details/78961456
+https://blog.csdn.net/sinat_22548843/article/details/46931831
+https://blog.csdn.net/roguesir/article/details/79809584
