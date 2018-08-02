@@ -3,7 +3,7 @@
 from sklearn import metrics
 from liblinearutil import svm_read_problem,predict,problem,parameter,train
 
-feature_dir = "/home/iiip/Info/capsnet_baseline/n-gram/data/feature(1,1).txt"
+feature_file = "/home/iiip/Info/capsnet_baseline/n-gram/data/feature(1,1).txt"
 
 def metrics_result(actual, predict):
     accuracy = round(metrics.accuracy_score(actual, predict), 3)
@@ -14,7 +14,7 @@ def metrics_result(actual, predict):
 
 def main():
     if __name__ == "__main__":
-        y, x = svm_read_problem(feature_dir, return_scipy = True)
+        y, x = svm_read_problem(feature_file, return_scipy = True)
         # train:test = 7:3
         train_X = x[:14000]
         train_y = y[:14000]
