@@ -5,7 +5,7 @@ from sklearn.datasets import dump_svmlight_file
 from sklearn.feature_extraction.text import CountVectorizer
 import os
 
-feature_dir = "/home/iiip/Info/capsnet_baseline/n-gram/data/feature(1,3).txt"
+feature_file = "/home/iiip/Info/capsnet_baseline/n-gram/data/feature(1,3).txt"
 ngram = CountVectorizer(ngram_range=(1, 3))
 
 
@@ -48,7 +48,7 @@ def main():
         label = get_label(label_list)
         data, label = shuffle(data, label)  # 打乱数据
         print(ngram.ngram_range)
-        dump_svmlight_file(data, label, feature_dir)  # 将数据转换成libsvm格式并保存本地
+        dump_svmlight_file(data, label, feature_file)  # 将数据转换成libsvm格式并保存本地
 
 
 main()
