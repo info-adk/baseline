@@ -27,7 +27,7 @@ def get_dataset():
     return data, label_list
 
 
-# 将每篇文章所属类别转换成integer,即label_list -> lable
+# 将每篇文章所属类别转换成integer,即label_list -> label
 def get_label(label_list):
     label_list = label_list
     label = []
